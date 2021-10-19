@@ -7,18 +7,53 @@ body {
     color:#000;
 }
 
+a {
+    color:#000;
+}
+
 #box {
     width:400px;
     height:200px;
-    margin-top:150px;
+    margin-top:200px;
     margin-left:300px;
     padding:40px;
     border-radius:10px;
-    border-top:5px dashed black;
-    border-bottom:5px dashed black;
-    border-left:5px dashed black;
-    border-right:5px dashed black;
+    border:5px dashed black;
+    letter-spacing: 1px;
 }
+
+#box2 {
+    width:100px;
+    height:100px;
+    margin-top:-200px;
+    margin-left:325px;
+    padding:10px;
+}
+
+#box2 .linx {
+    width:100px;
+    height:20px;
+    margin-bottom:15px;
+    margin-left:475px;
+    padding:10px;
+    text-align:center;
+    border-radius:4px;
+    border:2px dashed black;
+    font-weight:bold;
+}
+
+    #box2 .linx:hover a {
+        color:black;
+        -moz-transition-duration:.5s;
+        -webkit-transition-duration:.5s;
+        -o-transition-duration:.5s;
+    }
+    #box2 .linx:hover {
+        background:#ffe880;/*color of link bg on hover*/
+        -moz-transition-duration:.5s;
+        -webkit-transition-duration:.5s;
+        -o-transition-duration:.5s;
+    }
 
 img {  
     max-width: 75%;  
@@ -30,13 +65,21 @@ img {
 </style>
 </head>
 
-<div id="box"><h1>about me</h1>
-<br><b>Name:</b> Wenxi Chen
-<br><b>Major:</b> Computer Science
-<br><b>Minor:</b> Design
+<div id="box"><h1>about me <i>!</i></h1>
+<br><span style="background-color: #ffe880"><b>name:</b></span> wenxi chen
+<br><span style="background-color: #ffe880"><b>major:</b></span> computer science
+<br><span style="background-color: #ffe880"><b>minor:</b></span> design
 
-<div class="box1">
+<div class="box">
 <img src="https://64.media.tumblr.com/385f462aa37a1b6e384e38398784e470/02bf8d4038347d1d-a6/s1280x1920/7fe52ac657e39e92d6819dfb303680235c729fde.png">
+</div>
+</div>
+
+<div id="box2">
+
+<div class="linx"><a href="https://linkedin.com/in/wxchen">linkedin</a></div>
+<div class="linx"><a href="https://wenxi.carrd.co">art portfolio</a></div>
+
 </div>
 
 <body>
