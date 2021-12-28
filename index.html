@@ -1,6 +1,8 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="shortcut icon" href="https://www.freepnglogos.com/uploads/strawberry-png/strawberry-solo-transparent-png-stickpng-5.png">
 
 <title>Wenxi Chen</title>
@@ -9,6 +11,7 @@
 
 body {
     font-family: Helvetica;
+    font-size:95%;
     color:#000;
     margin: 0px;
     background:#d2e3ee;
@@ -73,6 +76,35 @@ li.nav a:hover {
     background:#ffe880;
 }
 
+ul.navmobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+}
+
+li.navmobile {
+  flex: left;
+}
+
+li.navmobile a {
+    display: inline;
+    color: black;
+    text-align: center;
+    margin-right: 7px;
+    padding: 7px 15px;
+    text-decoration: underline;
+    font-family: monaco;
+    border: 1px solid black;
+}
+
+li.navmobile a:hover {
+    color:black;
+    background:#ffe880;
+}
+
 ul.links {
     list-style-type: none;
     margin: 0;
@@ -101,8 +133,51 @@ li.links a:hover {
     background:#ffe880;
 }
 
+ul.linksmobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+}
+
+li.linksmobile {
+  flex: left;
+}
+
+li.linksmobile a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    height:15px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    padding:7px 15px;
+    text-decoration: none;
+    font-family: Helvetica;
+    border: 2px dashed black;
+    border-radius: 4px;
+}
+
+li.linksmobile a:hover {
+    color:black;
+    background:#ffe880;
+}
+
+h2.title {
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 23px;
+    letter-spacing: 3px;
+    display: none;
+    margin-bottom:25px;
+}
+
 #box {
     width:800px;
+    max-width:70%;
     height:400px;
     padding:40px;
     border-radius:10px;
@@ -114,6 +189,7 @@ li.links a:hover {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 img {  
@@ -121,20 +197,66 @@ img {
 }
 
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top:15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top:15px;
 }
 
 .image {
     flex-basis: 150%;
-    margin-right:20px;
+    margin-right:70px;
     margin-top:50px;
 }
 
 .text {
-  margin-right:50px;
+  margin-right:px;
+}
+
+@media only screen and (max-width: 750px) {
+  /* For mobile phones: */
+  #box {
+    width: 70%;
+    height: 51%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    display: none;
+  }
+  body {
+    font-size:80%;
+  }
+  /**nav (nav bar)**/
+  ul.nav {
+    display: none;
+  }
+  li.nav {
+    display: none;
+  }
+  ul.navmobile {
+    display: inline;
+  }
+  li.navmobile {
+    display: inline;
+  }
+  h2.title {
+    display: block;
+  }
+  /**links (outside links)**/
+  ul.linksmobile {
+    display: inline-block;
+  }
+  li.linksmobile {
+    display: inline-block;
+  }
+  ul.links {
+    display: none;
+  }
+  li.links {
+    display: none;
+  }
 }
 
 </style>
@@ -150,6 +272,13 @@ img {
   <li class="nav"><a href="index.html">home</a></li>
 </ul>
 
+<h2 class="title"><b>WENXI CHEN</b></h2>
+<ul class="navmobile">
+  <li class="navmobile"><a href="index.html">home</a></li>
+  <li class="navmobile"><a href="edu.html">work</a></li>
+  <li class="navmobile"><a href="projects.html">projects</a></li>
+</ul>
+
 <div class="container">
 
 <div class="text"><br>Hello, my name is <span style="background-color: #ffe880">Wenxi</span>!
@@ -159,9 +288,16 @@ img {
 
 <div class="image"><img src="https://64.media.tumblr.com/385f462aa37a1b6e384e38398784e470/02bf8d4038347d1d-a6/s1280x1920/7fe52ac657e39e92d6819dfb303680235c729fde.png"></div>
 
+
 </div>
 
 <p>
+
+<ul class="linksmobile">
+<li class="linksmobile"><a href="https://github.com/wenxich"><b>github</b></a></li>
+<li class="linksmobile"><a href="https://wenxi.carrd.co"><b>art portfolio</b></a></li>
+<li class="linksmobile"><a href="https://linkedin.com/in/wxchen"><b>linkedin</b></a></li>
+</ul>
 
 <ul class="links">
 <li class="links"><a href="https://github.com/wenxich"><b>github</b></a></li>
