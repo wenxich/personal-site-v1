@@ -129,7 +129,17 @@ img {
 </head>
 <body>
 
-<div id="extraControls" class="hidden">
+<div id="extraControls" class="hidden"></div>
+<script type="text/javascript" src="jquery.js"> </script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $("div#extraControls").removeClass("hidden");
+});
+
+</script>
+
+
 <div id="box"><h2><span style="letter-spacing: 3px">WENXI CHEN</span></h2>
 
 <div id="nav"></div>
@@ -146,20 +156,10 @@ img {
 <div class="links"><a href="https://linkedin.com/in/wxchen">linkedin</a></div>
 <div class="links"><a href="https://wenxi.carrd.co">art portfolio</a></div>
 
-</div>
 
 </div>
 </div>
 </div>
-
-<script type="text/javascript" src="jquery.js"> </script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-    $("div#extraControls").removeClass("hidden");
-});
-
-</script>
 
 </body>
 </html>
