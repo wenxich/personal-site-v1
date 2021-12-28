@@ -27,16 +27,58 @@ ul.a {
     list-style-position: outside;
 }
 
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li.title {
+  float: left;
+  display: block;
+  color: black;
+  text-align: right;
+  margin-right: 7px;
+  padding: 7px 0px;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 23px;
+  letter-spacing: 3px;
+}
+
+li.nav {
+  float: right;
+}
+
+li.nav a {
+  display: block;
+  color: black;
+  text-align: right;
+  margin-right: 7px;
+  padding: 7px 15px;
+  text-decoration: underline;
+  font-family: monaco;
+  border: 1px solid black;
+}
+
+li.nav a:hover {
+  color:black;
+  background:#ffe880;
+}
+
 #box {
-    width:400px;
-    height:295px;
+    width:800px;
+    height:400px;
     margin: auto;
-    margin-top:150px;
+    margin-top:100px;
     padding:40px;
     border-radius:10px;
     border:5px dashed black;
     letter-spacing: 1px;
     background-color:white;
+    overflow: scroll;
 }
 
 #ext {
@@ -62,6 +104,7 @@ ul.a {
     -moz-transition-duration:.5s;
     -webkit-transition-duration:.5s;
     -o-transition-duration:.5s;
+    overflow:hidden;
 }
 
     #ext .links:hover a {
@@ -71,43 +114,6 @@ ul.a {
         -o-transition-duration:.5s;
     }
     #ext .links:hover {
-        background:#ffe880;
-        -moz-transition-duration:.5s;
-        -webkit-transition-duration:.5s;
-        -o-transition-duration:.5s;
-    }
-    
-#nav {
-    width:300px;
-    height:100px;
-    margin:auto;
-    margin-top:-52px;
-    margin-left:185px;
-    border: 0px solid black;
-    padding:10px;
-    display: inline;
-    overflow: auto;
-    position: absolute;
-    font-family: monaco;
-    font-size:14px;
-}
-
-#nav .pages {
-    width:150px;
-    height:20px;
-    padding:7px;
-    text-align:center;
-    border-radius:4px;
-    border:0px dashed black;
-    text-decoration:underline;
-    display: inline;
-    -moz-transition-duration:.5s;
-    -webkit-transition-duration:.5s;
-    -o-transition-duration:.5s;
-}
-
-    #nav .pages:hover a {
-        color:black;
         background:#ffe880;
         -moz-transition-duration:.5s;
         -webkit-transition-duration:.5s;
@@ -125,19 +131,29 @@ img {
 </head>
 <body>
 
-<div id="box"><h2><span style="letter-spacing: 3px">WENXI CHEN</span></h2>
+<div id="box">
 
-<div id="nav">
-    <div class="pages"><a href="index.html">home</a></div>
-    <div class="pages"><a href="edu.html">work</a></div>
-</div>
+<ul class="nav">
+  <li class="title"><b>WENXI CHEN</b></li>
+  <li class="nav"><a href="edu.html">work</a></li>
+  <li class="nav"><a href="index.html">home</a></li>
+</ul>
 
-<br>I am currently a first-year student pursuing a B.A.S. in <span style="background-color: #ffe880">Computer Science</span> and a minor in <span style="background-color: #ffe880">Design</span> from the University of Pennsylvania.
+<p>I am interested in the intersection between mechanical design and health technology, as well as the broader connections between science and art. My background currently consists of years of health research and data analysis, but I hope to expand my experience in programming and digital design.
 
 <p><b>Present:</b>
 
-<p><ul class="a"><li><b>Research Assistant</b>, Center for Autism Research, Children's Hospital of Pennsylvania</li></ul>
+<ul class="a"><li><b>Research Assistant</b>, Center for Autism Research, Children's Hospital of Pennsylvania</li>
+<li><b>Design Chair</b>, <i>Dissent</i>, University of Pennsylvania</li>
+<li><b>Advocacy Committee Member</b>, Women in Computer Science, University of Pennsylvania</li>
+<li><b>HackerX Committee Member</b>, FemmeHacks, University of Pennsylvania</li></ul>
+
+<p><b>Past:</b>
+
+<p><ul class="a"><li><b>Public Health Research Intern</b>, Case Western Reserve University</li>
+<li><b>Diabetes Research Intern</b>, Northeast Ohio Research Education Medicine Alliance, Cleveland Clinic</li></ul>
 
 </div>
+
 </body>
 </html>

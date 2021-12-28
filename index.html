@@ -27,139 +27,136 @@ ul.a {
     list-style-position: outside;
 }
 
-div.hidden {
-display: none;
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+li.title {
+    float: left;
+    display: block;
+    color: black;
+    text-align: right;
+    margin-right: 7px;
+    padding: 7px 0px;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+li.nav {
+    float: right;
+}
+
+li.nav a {
+    display: block;
+    color: black;
+    text-align: right;
+    margin-right: 7px;
+    padding: 7px 15px;
+    text-decoration: underline;
+    font-family: monaco;
+    border: 1px solid black;
+}
+
+li.nav a:hover {
+    color:black;
+    background:#ffe880;
+}
+
+ul.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    bottom: 165px;
+}
+
+li.links a {
+    display: block;
+    color: black;
+    text-align: center;
+    margin-top:10px;
+    padding:5px;
+    text-decoration: none;
+    font-family: Helvetica;
+    border: 2px dashed black;
+    border-radius: 4px;
+    width:150px;
+}
+
+li.links a:hover {
+    color:black;
+    background:#ffe880;
 }
 
 #box {
-    width:400px;
-    height:150px;
+    width:800px;
+    height:400px;
     margin: auto;
-    margin-top:20px;
+    margin-top:100px;
     padding:40px;
     border-radius:10px;
-    border:5px dashed black;
+    border: 5px dashed black;
     letter-spacing: 1px;
     background-color:white;
+    overflow: scroll;
+    position: relative;
 }
-
-#ext {
-    width:100px;
-    height:100px;
-    margin:auto;
-    margin-top:-215px;
-    margin-left:-10px;
-    padding:10px;
-    font-weight:bold;
-    /*font-family: monaco;
-    font-size:14px;*/
-}
-
-#ext .links {
-    width:150px;
-    height:20px;
-    margin-top:10px;
-    padding:5px;
-    text-align:center;
-    border-radius:4px;
-    border:2px dashed black;
-    -moz-transition-duration:.5s;
-    -webkit-transition-duration:.5s;
-    -o-transition-duration:.5s;
-    overflow:hidden;
-}
-
-    #ext .links:hover a {
-        color:black;
-        -moz-transition-duration:.5s;
-        -webkit-transition-duration:.5s;
-        -o-transition-duration:.5s;
-    }
-    #ext .links:hover {
-        background:#ffe880;
-        -moz-transition-duration:.5s;
-        -webkit-transition-duration:.5s;
-        -o-transition-duration:.5s;
-    }
-    
-#nav {
-    width:300px;
-    height:100px;
-    margin:auto;
-    margin-top:-52px;
-    margin-left:185px;
-    border: 0px solid black;
-    padding:10px;
-    display: inline;
-    overflow: auto;
-    position: absolute;
-    font-family: monaco;
-    font-size:14px;
-}
-
-#nav .pages {
-    width:150px;
-    height:20px;
-    padding:7px;
-    text-align:center;
-    border-radius:4px;
-    border:0px dashed black;
-    text-decoration:underline;
-    display: inline;
-    -moz-transition-duration:.5s;
-    -webkit-transition-duration:.5s;
-    -o-transition-duration:.5s;
-}
-
-    #nav .pages:hover a {
-        color:black;
-        background:#ffe880;
-        -moz-transition-duration:.5s;
-        -webkit-transition-duration:.5s;
-        -o-transition-duration:.5s;
-    }
 
 img {  
-    max-width: 75%;  
-    height: auto;
-    margin-top:-5px;
-    margin-left:230px;
+    max-width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top:50px;
+}
+
+.image {
+    flex-basis: 120%;
+}
+
+.text {
 }
 
 </style>
 </head>
 <body>
 
-<div id="extraControls" class="hidden"></div>
-<script type="text/javascript" src="jquery.js"> </script>
-<script type="text/javascript">
+<div id="box">
 
-$(document).ready(function() {
-    $("div#extraControls").removeClass("hidden");
-});
+<ul class="nav">
+  <li class="title"><b>WENXI CHEN</b></li>
+  <li class="nav"><a href="edu.html">work</a></li>
+  <li class="nav"><a href="index.html">home</a></li>
+</ul>
 
-</script>
+<div class="container">
 
+<div class="text"><br>Hello, my name is <span style="background-color: #ffe880">Wenxi</span>! I'm currently a first-year student at the University of Pennsylvania majoring in <u>Computer Science</u> and minoring in <u>Design</u> and <u>Mechanical Engineering</u>. This is my personal site. Thank you for visiting!</div>
 
-<div id="box"><h2><span style="letter-spacing: 3px">WENXI CHEN</span></h2>
-
-<div id="nav"></div>
-    <div class="pages"><a href="index.html">home</a></div>
-    <div class="pages"><a href="edu.html">work</a></div>
-</div>
-
-<br>Hello, my name is <span style="background-color: #ffe880">Wenxi</span>! I'm currently a freshman at the University of Pennsylvania majoring in <span style="background-color: #ffe880">Computer Science</span>. This is my personal site (still a work in progress). Thank you for visiting!
-
-<img src="https://64.media.tumblr.com/385f462aa37a1b6e384e38398784e470/02bf8d4038347d1d-a6/s1280x1920/7fe52ac657e39e92d6819dfb303680235c729fde.png">
-
-<div id="ext">
-
-<div class="links"><a href="https://linkedin.com/in/wxchen">linkedin</a></div>
-<div class="links"><a href="https://wenxi.carrd.co">art portfolio</a></div>
-
+<div class="image"><img src="https://64.media.tumblr.com/385f462aa37a1b6e384e38398784e470/02bf8d4038347d1d-a6/s1280x1920/7fe52ac657e39e92d6819dfb303680235c729fde.png"></div>
 
 </div>
-</div>
+
+<p>
+
+<ul class="links">
+
+<li class="links"><a href="https://linkedin.com/in/wxchen"><b>linkedin</b></a></li>
+<li class="links"><a href="https://wenxi.carrd.co"><b>art portfolio</b></a></li>
+
+</ul>
+
 </div>
 
 </body>
