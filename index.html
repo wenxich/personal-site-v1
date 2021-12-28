@@ -155,7 +155,10 @@ img {
 <script type="text/javascript" src="jquery.js"> </script>
 <script type="text/javascript">
 
-$("div#extraControls").show();
+$(document).ready(function() {
+    $("div#extraControls").removeClass("hidden");
+});
+
 </script>
 
 </body>
