@@ -2,4 +2,4 @@
 
 A (work-in-progress) personal website created using HTML and CSS.
 
-All media content was created by me.
+<b>Media credits:</b> All media content was created by me. :~)
