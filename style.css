@@ -119,3 +119,12 @@ h2.title {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 750px) {
+  /* For mobile phones: */
+  #box {
+    width: 70%;
+    height: 75%;
+    border: 3px dashed black;
+  }
+}
