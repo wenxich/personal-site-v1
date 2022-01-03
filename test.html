@@ -1,0 +1,257 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="https://www.freepnglogos.com/uploads/strawberry-png/strawberry-solo-transparent-png-stickpng-5.png">
+<link rel="stylesheet" href="style.css">
+
+<title>Wenxi Chen</title>
+
+<style type="text/css">
+
+ul.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: transparent;
+    position: absolute;
+    bottom: 40px;
+}
+
+li.links a {
+    display: block;
+    color: var(--font-color);
+    text-align: center;
+    margin-top:10px;
+    padding:5px;
+    text-decoration: none;
+    font-family: Helvetica;
+    border: 2px dashed var(--font-color);
+    border-radius: 4px;
+    width:150px;
+    transition: 0.3s;
+}
+
+li.links a:hover {
+    color:var(--font-color);
+    background:var(--link-color);
+    margin-left:10%;
+}
+
+ul.linksmobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: transparent;
+    display: none;
+}
+
+li.linksmobile {
+  flex: left;
+}
+
+li.linksmobile a {
+    display: inline-block;
+    color: var(--font-color);
+    text-align: center;
+    height:15px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    padding:7px 15px;
+    text-decoration: none;
+    font-family: Helvetica;
+    border: 2px dashed var(--font-color);
+    border-radius: 4px;
+    transition: 0.3s;
+    background:transparent;
+}
+
+li.linksmobile a:hover {
+    color:var(--font-color);
+    background:#ffe880;
+}
+
+#box {
+    overflow: visible;
+}
+
+img {  
+    width:100%;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    margin-right:10%;
+}
+
+.image {
+  width:390px;
+  max-width:50%;
+  margin-top:-0.5%;
+  right:10%;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.imagemobile {
+  display: none;
+  position:absolute;
+}
+
+.text {
+  margin-top:15px;
+  max-width:55%;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 940px) {
+  .text {
+    max-width:40%;
+  }
+  .image {
+    margin-top:0%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  /* For mobile phones: */
+  .text {
+    max-width:70%;
+    font-size: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .image {
+    display: none;
+  }
+  .imagemobile {
+    display: block;
+    width:100%;
+    margin-top:-81%;
+    margin-left:23%;
+  }
+  body {
+    font-size:80%;
+  }
+  /**nav (nav bar)**/
+  ul.nav {
+    display: none;
+  }
+  li.nav {
+    display: none;
+  }
+  ul.navmobile {
+    display: inline;
+  }
+  li.navmobile {
+    display: inline;
+  }
+  h2.title {
+    display: block;
+  }
+  /**links (outside links)**/
+  ul.linksmobile {
+    display: inline-block;
+  }
+  li.linksmobile {
+    display: inline-block;
+  }
+  ul.links {
+    display: none;
+  }
+  li.links {
+    display: none;
+  }
+  #box {
+    overflow: visible;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div id="box" style="z-index:1">
+
+<ul class="nav">
+  <li class="title"><b>WENXI CHEN</b></li>
+  <li class="nav"><a href="projects.html">projects</a></li>
+  <li class="nav"><a href="edu.html">work</a></li>
+  <li class="nav"><a href="index.html">home</a></li>
+</ul>
+
+<h2 class="title"><b>WENXI CHEN</b></h2>
+<ul class="navmobile" style="z-index: 100">
+  <li class="navmobile" style="z-index: 100"><a href="index.html">home</a></li>
+  <li class="navmobile" style="z-index: 100"><a href="edu.html">work</a></li>
+  <li class="navmobile" style="z-index: 100"><a href="projects.html">projects</a></li>
+</ul>
+
+<div class="container">
+
+<div class="text"><br>Hello, my name is <span style="background-color: var(--link-color)">Wenxi</span>!
+
+<p>I'm a first-year student at the University of Pennsylvania, pursuing a B.A.S. in <b>Computer Science</b> and minors in <b>Design</b> and <b>Mechanical Engineering</b>.
+<p>Thank you for visiting! Feel free to reach out through <a href="mailto:wenxi.c.chen@gmail.com">email</a> or check out the links below.</div>
+<div class="image"><img id="headerart" src=""></div>
+
+<script type="text/javascript">
+  if(localStorage.getItem('theme') === 'dark') {
+    document.getElementById("headerart").src = "files/headerdark.png";
+  } else {
+    document.getElementById("headerart").src = "files/header.png";
+  }
+</script>
+
+</div>
+
+<p>
+
+<ul class="linksmobile" style="z-index: -100">
+<li class="linksmobile" style="z-index: -100"><a href="https://github.com/wenxich"><b>github</b></a></li><br>
+<li class="linksmobile" style="z-index: -100"><a href="https://wenxi.carrd.co"><b>art portfolio</b></a></li><br>
+<li class="linksmobile" style="z-index: -100"><a href="https://linkedin.com/in/wxchen"><b>linkedin</b></a></li>
+</ul>
+
+<ul class="links">
+<li class="links"><a href="https://github.com/wenxich"><b>github</b></a></li>
+<li class="links"><a href="https://wenxi.carrd.co"><b>art portfolio</b></a></li>
+<li class="links"><a href="https://linkedin.com/in/wxchen"><b>linkedin</b></a></li>
+</ul>
+<div class="imagemobile" style="z-index: 0"><img id="headerartmobile" src=""></div>
+
+<script type="text/javascript">
+  if(localStorage.getItem('theme') === 'dark') {
+    document.getElementById("headerartmobile").src = "files/headerdark.png";
+  } else {
+    document.getElementById("headerartmobile").src = "files/header.png";
+  }
+</script>
+
+</div>
+
+<div class="cloud one" style="z-index: -1"></div>
+<div class="cloud two" style="z-index: -1"></div>
+<div class="cloud three" style="z-index: -1"></div>
+<div class="cloud four" style="z-index: -1"></div>
+<div class="cloud five" style="z-index: -1"></div>
+
+
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+    <em>Enable Dark Mode!</em>
+    </div>
+
+<script src="js/slider.js"></script>
+
+</body>
+</html>

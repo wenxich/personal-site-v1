@@ -11,12 +11,25 @@ if (currentTheme) {
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        headerChange();
+        document.documentElement.setAttribute('data-theme', 'dark');
     }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
+    else {
+        localStorage.setItem('theme', 'light');
+        headerChange();
+        document.documentElement.setAttribute('data-theme', 'light');
     }    
+}
+
+function headerChange() {
+  if(localStorage.getItem('theme') === 'dark') {
+    document.getElementById("headerart").src = "files/headerdark.png";
+    document.getElementById("headerartmobile").src = "files/headerdark.png";
+  } else {
+    document.getElementById("headerart").src = "files/header.png";
+    document.getElementById("headerartmobile").src = "files/header.png";
+  }
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
