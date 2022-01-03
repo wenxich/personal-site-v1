@@ -4,14 +4,20 @@
     --font-color: #000;
     --bg-color: #d2e3ee;
     --box-color: #fff;
+    --cloud-color: #fff;
 }
 
 [data-theme="dark"] {
-    --link-color: #202020;
-    --border-color: #D2E3EE;
-    --font-color: #D2E3EE;
-    --bg-color: #202020;
-    --box-color: #2F3061;
+    --link-color: #8A0105;
+    --border-color: #8A0105;
+    --font-color: #EDDDD4;
+    --bg-color: #0F0F0F;
+    --box-color: #0F0F0F;
+    --cloud-color: #EDDDD4;
+}
+
+.headerart {
+  transition: 0.5s;
 }
 
 body {
@@ -21,6 +27,7 @@ body {
     width:100%;
     margin: 0px;
     background:var(--bg-color);
+    transition: 0.3s;
     /*background-image: url(files/lightmodebg.png);
     background-repeat: repeat;*/
     /*background-size:cover;*/
@@ -29,12 +36,12 @@ body {
 a {
     color:var(--font-color);
     text-decoration:underline;
+    transition: 0.3s;
 }
 
 a:hover {
     color:var(--font-color);
     background:var(--link-color);
-    transition: 0.3s;
 }
 
 ul.a {
@@ -220,7 +227,7 @@ input:checked + .slider:before {
 .cloud {
   position: absolute;
   left: 0;
-  background: white;
+  background: var(--cloud-color);
   border-radius: 1000px;
   animation: zoomies 10s infinite linear;
 }
@@ -232,7 +239,7 @@ input:checked + .slider:before {
   left: 10%;
   width: 50%;
   height: 150%;
-  background: white;
+  background: var(--cloud-color);
   border-radius: 50%;
 }
 
@@ -243,7 +250,7 @@ input:checked + .slider:before {
   right: 20%;
   width: 30%;
   height: 100%;
-  background: white;
+  background: var(--cloud-color);
   border-radius: 50%;
 }
 
