@@ -21,6 +21,8 @@ body {
     border: 0;
 }
 
+/** NAVIGATION BAR **/
+
 #navbar {
     background-color: white;
     position: fixed;
@@ -53,7 +55,7 @@ body {
     font-size: 50px;
 }
 
-
+/** TITLE (NAME + MAJOR) **/
 
 .title {
     background-size: 100%;
@@ -73,4 +75,21 @@ body {
     margin-top: -60px;
     font-size: 1.5em;
     font-weight: 300;
+}
+
+/** SOCIAL MEDIA **/
+
+.button{
+    background-color: var(--accent);
+    height: 45px;
+    width: 45px;
+    border-radius: 2px;
+    transition:ease;
+    transition-duration: .7s;
+    display:  inline-block;
+    stroke: black;
+}
+.button:hover{
+    background-color: black;
+    stroke: black;
 }
