@@ -24,6 +24,7 @@ body {
 #navbar {
     background-color: transparent;
     position: fixed;
+    top: -50px;
     width: 100%;
     border-bottom-width: 3px;
     border-bottom: black;
