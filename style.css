@@ -22,12 +22,10 @@ body {
 }
 
 #navbar {
-    background-color: transparent;
+    background-color: white;
     position: fixed;
     top: -50px;
     width: 100%;
-    border-bottom-width: 3px;
-    border-bottom: black;
     max-height: 45px;
     display: block;
     transition: top 0.3s;
