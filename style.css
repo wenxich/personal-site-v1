@@ -5,6 +5,7 @@
     --border: #D8D4D3;
     --accent: #d33f49;
     --highlight: #F5E6D8;
+    --linkcolor: #d33f49;
 }
 
 body {
@@ -23,7 +24,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
 }
 
 li {
@@ -32,12 +33,12 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: var(--linkcolor);
 }
