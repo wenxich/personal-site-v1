@@ -28,6 +28,7 @@ ul {
     overflow: hidden;
     background-color: transparent;
     border-bottom: black;
+    max-height: 10px;
 }
 
 li {
