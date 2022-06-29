@@ -13,13 +13,26 @@
 </head>
 <body>
 
-<ul>
-    <li><a class="active" href="#">&#9829;</a></li>
-    <li><a href="#">about</a></li>
-    <li><a href="#">work</a></li>
-    <li><a href="#">projects</a></li>
-    <li><a href="#">contact</a></li>
-</ul>
+<div id="navbar">
+    <a class="active" href="#">home</a>
+    <a href="#">about</a>
+    <a href="#">work</a>
+    <a href="#">projects</a>
+    <a href="#">contact</a>
+</div>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+    }
+</script>
 
 </body>
 </html>

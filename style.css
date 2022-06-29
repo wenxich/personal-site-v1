@@ -21,21 +21,16 @@ body {
     border: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#navbar {
     overflow: hidden;
     background-color: transparent;
+    border-bottom-width: 3px;
     border-bottom: black;
     max-height: 45px;
 }
 
-li {
+#navbar a {
     float: left;
-}
-
-li a {
     display: block;
     color: black;
     text-align: center;
@@ -43,7 +38,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+#navbar a:hover {
     color: white;
     background-color: var(--linkcolor);
     text-decoration:underline;
