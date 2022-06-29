@@ -43,6 +43,7 @@ li a {
 }
 
 li a:hover {
+    color: white;
     background-color: var(--linkcolor);
     text-decoration:underline;
     transition: 0.3s;
