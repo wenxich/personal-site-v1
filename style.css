@@ -22,11 +22,14 @@ body {
 }
 
 #navbar {
-    overflow: hidden;
     background-color: transparent;
+    position: fixed;
+    width: 100%;
     border-bottom-width: 3px;
     border-bottom: black;
     max-height: 45px;
+    display: block;
+    transition: top 0.3s;
 }
 
 #navbar a {
@@ -36,6 +39,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 #navbar a:hover {
