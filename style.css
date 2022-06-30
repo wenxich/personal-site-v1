@@ -160,7 +160,7 @@ svg:hover{
     overflow: hidden;
     min-height: 200px;
     text-align: center;
-    align-items: center;
+    position: relative;
 }
 
 /** ABOUT **/
@@ -169,6 +169,9 @@ svg:hover{
     max-width: 60%;
     padding-left: 20px;
     padding-right: 20px;
+    position: absolute;
+    vertical-align: center;
+
 }
 
 .aboutchild img {
