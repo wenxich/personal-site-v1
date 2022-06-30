@@ -11,10 +11,9 @@ function scrollFunction() {
 
 //jQuery for scrolling to div
 
-$(document).on('click','.searchbychar', function(event) {
-    event.preventDefault();
-    var target = "#" + this.getAttribute('data-target');
+$('.searchbychar').click(function () {
+    var divID = '#' + this.id;
     $('html, body').animate({
-        scrollTop: $(target).offset().top
+        scrollTop: $(divID).offset().top
     }, 2000);
 });
