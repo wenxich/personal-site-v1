@@ -36,7 +36,7 @@ body {
     display: block;
     transition: top 0.3s;
     border-bottom-color: black;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-style: solid;
 }
 
@@ -97,12 +97,18 @@ body {
 }
 .button:hover{
     background-color: black;
-    stroke: white;
 }
 
 svg{
     display: block;
     margin: 5px auto auto;
+    stroke: black;
+}
+
+svg:hover{
+    display: block;
+    margin: 5px auto auto;
+    stroke: white;
 }
 
 /** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
@@ -114,6 +120,6 @@ svg{
     font-size: 16px;
     background-color: white;
     border-top-color: black;
-    border-top-width: 2px;
+    border-top-width: 1px;
     border-top-style: solid;
 }
