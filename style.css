@@ -123,21 +123,6 @@ svg:hover{
     margin: 5px auto auto;
 }
 
-/** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
-
-.content {
-    max-width: 90%;
-    padding: 10%;
-    display: block;
-    font-size: 16px;
-    background-color: var(--contentbg);
-    border-top-color: var(--primarytext);
-    border-top-width: 1px;
-    border-top-style: solid;
-    overflow: hidden;
-    min-height: 200px;
-}
-
 /** COOL STUFF: CURSOR + SELECTION **/
 .custom-cursor {
     position: fixed;
@@ -161,11 +146,26 @@ svg:hover{
     color: var(--background);
 }
 
+/** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
+
+.content {
+    max-width: 90%;
+    padding: 10%;
+    display: block;
+    font-size: 16px;
+    background-color: var(--contentbg);
+    border-top-color: var(--primarytext);
+    border-top-width: 1px;
+    border-top-style: solid;
+    overflow: hidden;
+    min-height: 200px;
+    text-align: center;
+}
+
 /** ABOUT **/
 .aboutchild {
-    width: 50%;
-    float: left;
-    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .aboutchild img {
