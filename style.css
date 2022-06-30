@@ -102,3 +102,9 @@ svg{
     display: block;
     margin: 5px auto auto;
 }
+
+/** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
+
+.content {
+    margin: 10px;
+}
