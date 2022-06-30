@@ -90,7 +90,7 @@ body {
 }
 .button:hover{
     background-color: black;
-    stroke: black;
+    stroke: white;
 }
 
 svg{
