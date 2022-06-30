@@ -83,7 +83,7 @@ body {
     background-color: transparent;
     height: 40px;
     width: 40px;
-    border-radius: 40px;
+    border-radius: 0;
     transition: ease;
     transition-duration: .7s;
     display:  inline-block;
@@ -94,4 +94,10 @@ body {
 .button:hover{
     background-color: black;
     stroke: black;
+}
+
+svg{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
 }
