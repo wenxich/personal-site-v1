@@ -31,7 +31,7 @@ body {
 /** NAVIGATION BAR **/
 
 #navbar {
-    background-color: var(--background);
+    background-color: var(--contentbg);
     position: fixed;
     top: -50px;
     width: 100%;
