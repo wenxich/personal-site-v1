@@ -160,10 +160,6 @@ svg:hover{
 }
 
 /** ABOUT **/
-.aboutdesc {
+.aboutchild {
     float: left;
-}
-
-.aboutimg {
-    max-width: 200px;
 }
