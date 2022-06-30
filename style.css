@@ -51,6 +51,7 @@ body {
     font-size: 16px;
     stroke: black;
     fill: none;
+    margin: 0;
 }
 
 #navbar a:hover {
