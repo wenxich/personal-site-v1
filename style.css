@@ -90,6 +90,7 @@ body {
     stroke: black;
     border: black;
     border-width: 3px;
+    text-align: center;
 }
 .button:hover{
     background-color: black;
