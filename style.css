@@ -103,6 +103,8 @@ svg{
     display: block;
     margin: 5px auto auto;
     stroke: black;
+    transition: ease;
+    transition-duration: .7s;
 }
 
 svg:hover{
