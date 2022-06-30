@@ -31,6 +31,8 @@ body {
     max-height: 45px;
     display: block;
     transition: top 0.3s;
+    border-bottom-width: 10px;
+    border-bottom-color: black;
 }
 
 #navbar a {
