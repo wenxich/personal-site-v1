@@ -88,8 +88,7 @@ body {
     transition-duration: .7s;
     display:  inline-block;
     stroke: black;
-    border: black;
-    border-width: 3px;
+    border: 3px black;
     text-align: center;
 }
 .button:hover{
