@@ -101,6 +101,7 @@ svg{
 /** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
 
 .content {
+    padding: 10%;
     width: 90%;
     margin-left: 5%;
     display: block;
