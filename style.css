@@ -31,7 +31,7 @@ body {
 /** NAVIGATION BAR **/
 
 #navbar {
-    background-color: white;
+    background-color: var(--background);
     position: fixed;
     top: -50px;
     width: 100%;
@@ -40,7 +40,7 @@ body {
     display: block;
     transition: ease;
     transition-duration: .7s;
-    border-bottom-color: black;
+    border-bottom-color: var(--primarytext);
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
@@ -48,7 +48,7 @@ body {
 #navbar a {
     float: left;
     display: block;
-    color: black;
+    color: var(--primarytext);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -61,8 +61,8 @@ body {
 }
 
 #navbar a:hover {
-    color: white;
-    background-color: black;
+    color: var(--background);
+    background-color: var(--primarytext);
     text-decoration:underline;
     stroke: white;
 }
@@ -107,7 +107,7 @@ body {
     fill: none;
 }
 .button:hover{
-    background-color: black;
+    background-color: var(--primarytext);
     stroke: white;
 }
 
@@ -129,7 +129,7 @@ svg:hover{
     display: block;
     font-size: 16px;
     background-color: var(--contentbg);
-    border-top-color: black;
+    border-top-color: var(--primarytext);
     border-top-width: 1px;
     border-top-style: solid;
 }
@@ -143,7 +143,7 @@ svg:hover{
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--background);
     transition: transform 350ms ease;
     transform: translate(-50%, -50%) scale(.3);
     z-index: 1000;
@@ -153,6 +153,6 @@ svg:hover{
 }
 
 ::selection {
-    background: black;
-    color: white;
+    background: var(--primarytext);
+    color: var(--background);
 }
