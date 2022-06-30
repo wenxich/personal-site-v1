@@ -8,12 +8,3 @@ function scrollFunction() {
         document.getElementById("navbar").style.top = "-50px";
     }
 }
-
-//jQuery for scrolling to div
-
-$('.searchbychar').click(function () {
-    var divID = '#' + this.id;
-    $('html, body').animate({
-        scrollTop: $(divID).offset().top
-    }, 2000);
-});
