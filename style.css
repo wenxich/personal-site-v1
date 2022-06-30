@@ -151,7 +151,7 @@ svg:hover{
 .content {
     max-width: 90%;
     padding: 10%;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     background-color: var(--contentbg);
     border-top-color: var(--primarytext);
@@ -166,6 +166,7 @@ svg:hover{
 .aboutchild {
     display: inline-block;
     vertical-align: top;
+    max-width: 40%;
 }
 
 .aboutchild img {
