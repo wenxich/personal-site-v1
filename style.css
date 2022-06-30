@@ -106,5 +106,6 @@ svg{
 /** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
 
 .content {
+    width: 90%;
     margin: 10px;
 }
