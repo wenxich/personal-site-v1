@@ -158,3 +158,12 @@ svg:hover{
     background: var(--primarytext);
     color: var(--background);
 }
+
+/** ABOUT **/
+.aboutdesc {
+    float: left;
+}
+
+.aboutimg {
+    max-width: 200px;
+}
