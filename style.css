@@ -24,6 +24,8 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /** NAVIGATION BAR **/
@@ -130,18 +132,16 @@ svg:hover{
     border-top-style: solid;
 }
 
-/** CURSOR (thank you Clement Girault) **/
-
-body .cursor {
-    pointer-events: none;
-}
-body .cursor__ball {
-    position: fixed;
-    top: 0;
-    left: 0;
+/** CURSOR **/
+.cursor {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    position: absolute;
+    z-index: 9999;
+    background: white;
+    border-radius: 30px;
     mix-blend-mode: difference;
-    z-index: 1000;
-}
-body .cursor__ball circle {
-    fill: #f7f8fa;
+    pointer-events: none;
 }
