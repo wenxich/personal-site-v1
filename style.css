@@ -2,13 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Emoji:wght@600&family=Raleway:wght@700&display=swap');
 
 :root {
-    --background: #f5f0ef;
+    --background: white;
+    --contentbg: #f5f0ef;
     --primarytext: #0d0d0c;
-    --secondarytext: #817F7E;
-    --border: #D8D4D3;
-    --accent: #d33f49;
-    --highlight: #F5E6D8;
-    --linkcolor: #d33f49;
 }
 
 * {
@@ -66,7 +62,7 @@ body {
 
 #navbar a:hover {
     color: white;
-    background-color: var(--linkcolor);
+    background-color: black;
     text-decoration:underline;
     stroke: white;
 }
@@ -132,7 +128,7 @@ svg:hover{
     padding: 10%;
     display: block;
     font-size: 16px;
-    background-color: white;
+    background-color: var(--contentbg);
     border-top-color: black;
     border-top-width: 1px;
     border-top-style: solid;
