@@ -136,7 +136,7 @@ svg:hover{
     border-top-style: solid;
 }
 
-/** CURSOR **/
+/** COOL STUFF: CURSOR + SELECTION **/
 .custom-cursor {
     position: fixed;
     opacity: 0;
@@ -152,4 +152,9 @@ svg:hover{
 }
 .custom-cursor--link {
     transform: translate(-50%, -50%) scale(1);
+}
+
+::selection {
+    background: black;
+    color: white;
 }
