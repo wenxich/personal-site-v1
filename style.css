@@ -134,6 +134,7 @@ svg:hover{
     border-top-color: var(--primarytext);
     border-top-width: 1px;
     border-top-style: solid;
+    overflow: hidden;
 }
 
 /** COOL STUFF: CURSOR + SELECTION **/
