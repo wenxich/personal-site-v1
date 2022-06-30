@@ -160,8 +160,13 @@ svg:hover{
 }
 
 /** ABOUT **/
-.aboutchild {
-    width: 30%;
+.aboutchild1 {
+    width: 50%;
     float: left;
+    padding: 10px;
+}
+.aboutchild2 {
+    width: 50%;
+    float: right;
     padding: 10px;
 }
