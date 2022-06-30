@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
     var cursor = document.querySelector(".custom-cursor");
     var links = document.querySelectorAll("a");
     var initCursor = false;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     };
 
-    window.onmouseout = function(e) {
+    window.onmouseout = function() {
         TweenLite.to(cursor, 0.3, {
             opacity: 0
         });
