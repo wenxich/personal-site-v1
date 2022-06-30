@@ -47,6 +47,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 16px;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
 }
 
 #navbar a:hover {
