@@ -108,7 +108,7 @@ svg{
 
 .content {
     max-width: 90%;
-    margin: 5%;
+    padding: 5%;
     display: block;
     font-size: 16px;
     background-color: white;
