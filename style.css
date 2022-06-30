@@ -81,12 +81,14 @@ body {
 
 .title h1 {
     font-size: 6em;
+    max-font-size: 90%;
 }
 
 .title h2 {
     margin-top: -60px;
     font-size: 1.5em;
     font-weight: 300;
+    max-font-size: 60%;
 }
 
 /** SOCIAL MEDIA **/
