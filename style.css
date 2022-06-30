@@ -158,9 +158,9 @@ svg:hover{
     border-top-width: 1px;
     border-top-style: solid;
     overflow: hidden;
-    min-height: 200px;
+    height: 200px;
     text-align: center;
-    align-content: center;
+    align-items: center;
 }
 
 /** ABOUT **/
