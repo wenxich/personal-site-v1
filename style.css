@@ -50,11 +50,6 @@ body {
     transition: 0.3s;
 }
 
-.main-container {
-    padding: 15px 15px 2500px;
-    font-size: 50px;
-}
-
 /** TITLE (NAME + MAJOR) **/
 
 .title {
