@@ -161,5 +161,7 @@ svg:hover{
 
 /** ABOUT **/
 .aboutchild {
+    width: 50%;
     float: left;
+    padding: 10px;
 }
