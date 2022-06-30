@@ -13,7 +13,6 @@ function scrollFunction() {
 
 $(document).on('click','.searchbychar', function(event) {
     event.preventDefault();
-    event.stopPropagation();
     var target = "#" + this.getAttribute('data-target');
     $('html, body').animate({
         scrollTop: $(target).offset().top
