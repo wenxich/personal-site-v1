@@ -42,7 +42,8 @@ body {
     height: 45px;
     max-height: 45px;
     display: block;
-    transition: top 0.3s;
+    transition: ease;
+    transition-duration: .7s;
     border-bottom-color: black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -59,13 +60,14 @@ body {
     stroke: black;
     fill: none;
     margin: 0;
+    transition: ease;
+    transition-duration: .7s;
 }
 
 #navbar a:hover {
     color: white;
     background-color: var(--linkcolor);
     text-decoration:underline;
-    transition: 0.3s;
     stroke: white;
 }
 
