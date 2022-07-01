@@ -158,7 +158,7 @@ svg:hover{
     border-top-width: 1px;
     border-top-style: solid;
     overflow: hidden;
-    height: 200px;
+    min-height: 200px;
     text-align: center;
 }
 
