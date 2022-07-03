@@ -151,7 +151,7 @@ svg:hover{
 .content {
     max-width: 90%;
     padding: 10%;
-    display: block;
+    display: table-cell;
     font-size: 16px;
     background-color: var(--contentbg);
     border-top-color: var(--primarytext);
