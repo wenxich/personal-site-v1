@@ -163,6 +163,13 @@ svg:hover{
 
 .content a {
     color: black;
+    transition: ease;
+    transition-duration: .7s;
+}
+
+.content a:hover {
+    color: white;
+    background-color: black;
 }
 
 /** ABOUT **/
