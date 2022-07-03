@@ -158,6 +158,7 @@ svg:hover{
     overflow: hidden;
     min-height: 200px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .content a {
@@ -170,7 +171,6 @@ svg:hover{
     max-width: 60%;
     padding-left: 20px;
     padding-right: 20px;
-    vertical-align: center;
 
 }
 
