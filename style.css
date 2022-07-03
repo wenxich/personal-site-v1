@@ -168,6 +168,10 @@ svg:hover{
     -o-transform: translateY(-50%);
 }
 
+.content a {
+    color: black;
+}
+
 /** ABOUT **/
 .aboutchild {
     display: inline-block;
