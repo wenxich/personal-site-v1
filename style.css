@@ -149,7 +149,6 @@ svg:hover{
 .content {
     max-width: 90%;
     padding: 10%;
-    display: block;
     font-size: 16px;
     background-color: var(--contentbg);
     border-top-color: var(--primarytext);
@@ -157,8 +156,9 @@ svg:hover{
     border-top-style: solid;
     overflow: hidden;
     min-height: 200px;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .content a {
@@ -174,11 +174,9 @@ svg:hover{
 
 /** ABOUT **/
 .aboutchild {
-    display: inline-block;
     max-width: 60%;
     padding-left: 20px;
     padding-right: 20px;
-    vertical-align: middle;
 
 }
 
