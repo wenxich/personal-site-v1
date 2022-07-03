@@ -80,13 +80,13 @@ body {
 }
 
 .title h1 {
-    font-size: 1.5rem;
+    font-size: 5em;
     max-font-size: 90%;
 }
 
 .title h2 {
     margin-top: -60px;
-    font-size: .75rem;
+    font-size: 1.5em;
     font-weight: 300;
     max-font-size: 60%;
 }
