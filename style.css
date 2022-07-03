@@ -122,6 +122,7 @@ svg:hover{
 }
 
 /** COOL STUFF: CURSOR + SELECTION **/
+
 .custom-cursor {
     position: fixed;
     opacity: 0;
@@ -172,7 +173,8 @@ svg:hover{
     background-color: black;
 }
 
-/** ABOUT **/
+/** ABOUT CHILD DIVS **/
+
 .aboutchild {
     display: inline-block;
     max-width: 60%;
