@@ -80,12 +80,11 @@ body {
 }
 
 .title h1 {
-    font-size: 100px;
+    font-size: 60px;
 }
 
 .title h2 {
-    margin-top: -60px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
 }
 
