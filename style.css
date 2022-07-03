@@ -151,7 +151,7 @@ svg:hover{
 .content {
     max-width: 90%;
     padding: 10%;
-    display: table-cell;
+    display: block;
     font-size: 16px;
     background-color: var(--contentbg);
     border-top-color: var(--primarytext);
@@ -160,6 +160,12 @@ svg:hover{
     overflow: hidden;
     min-height: 200px;
     text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 /** ABOUT **/
