@@ -1,6 +1,6 @@
 # wenxich.github.io
 
-A (work-in-progress) portfolio website created using HTML and CSS.
+My portfolio website created using HTML, CSS, and JavaScript.
 
 <b>Media credits:</b> All media content was created by me. :~) <i>(Please do not repost or redistribute my artwork without credit or permission.)</i>
 
