@@ -18,6 +18,7 @@
 <div class="custom-cursor"></div>
 
 <div class="title" id="title">
+
     <div><h1>WENXI CHEN</h1>
         <h2>Candidate for B.A.S. in Computer Science</h2>
         <div class="button">
@@ -98,6 +99,7 @@
             </a>
         </div>
     </div>
+
 </div>
 
 <div id="navbar">
@@ -106,23 +108,29 @@
     </a>
     <a href="#about">about</a>
     <a href="#projects">projects</a>
+    <div class="switch">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
 </div>
 
-<div id="about" class="noselect"><h1><span style="color: white">.</span></h1></div>
+<div id="about" class="noselect"><h1><span style="color: var(--background)">.</span></h1></div>
 <div class="about">
     <div class="about_child1">
         <img alt="" src="files/self_portrait.jpeg" height="250" width="250"/>
     </div>
     <div class="about_child2">
         <h1>About</h1>
-        <p>Hello, my name is <span style="background-color: #FFFFFF">Wenxi</span>! I'm a second-year student at the
+        <p>Hello, my name is Wenxi! I'm a second-year student at the
             University of Pennsylvania, pursuing a B.A.S. in <b>Computer Science</b> and a minor in <b>Design</b>.</p>
         <p>As a diligent problem-solver and creative thinker, my interests lie in the many intersections between
             science, technology, and art. Currently, it manifests as a passion for creative programming and improving
             user experience. I document my project journey on <a href="https://listography.com/wenxi">Listography</a>.
         </p>
         <p>I currently work as a Full-Stack Engineer and Research Assistant at
-            <a href="https://www.research.chop.edu/tsui-laboratory/team">CHOP</a> and am part of the
+            <a href="https://www.research.chop.edu/tsui-laboratory/">CHOP</a> and am part of the
             <a href="https://psl.design.upenn.edu/">Polyhedral Structures Laboratory</a>.</p>
     </div>
 </div>
@@ -163,6 +171,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 <script src="js/navScroll.js"></script>
 <script src="js/cursor.js"></script>
+<script src="js/darkMode.js"></script>
 
 </body>
 </html>
