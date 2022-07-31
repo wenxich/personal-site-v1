@@ -282,7 +282,7 @@ svg:hover{
 .projects_child2 {
     display: inline-block;
     max-width: 43%;
-    margin: auto;
+    margin: auto 3% auto auto;
 }
 
 /** MEDIA QUERIES **/
