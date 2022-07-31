@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Emoji:wght@600&family=Raleway:wght@700&display=swap');
 
 :root {
-    --background: #f5f0ef;
-    --contentbg: white;
+    --background: white;
     --primarytext: #0d0d0c;
 }
 
@@ -20,7 +19,7 @@ body {
     color: var(--primarytext);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -31,7 +30,7 @@ body {
 /** NAVIGATION BAR **/
 
 #navbar {
-    background-color: var(--contentbg);
+    background-color: var(--background);
     position: fixed;
     top: -50px;
     width: 100%;
@@ -50,9 +49,9 @@ body {
     display: block;
     color: var(--primarytext);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     stroke: black;
     fill: none;
     margin: 0;
@@ -145,45 +144,162 @@ svg:hover{
     color: var(--background);
 }
 
-/** ABOUT / WORK / PROJECTS CONTENT DIVIDER **/
+/** ABOUT CONTENT DIVIDER **/
 
-.content {
-    max-width: 90%;
-    padding: 5% 10%;
-    display: block;
-    font-size: 16px;
-    background-color: var(--contentbg);
-    border-top-color: var(--primarytext);
-    border-top-width: 1px;
-    border-top-style: solid;
+.about {
+    max-width: 60%;
+    margin: auto;
+    padding: 4% 6%; /** top/bottom, left/right **/
+    font-size: 15px;
+    background-color: var(--background);
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 30px solid;
+    border-color: var(--primarytext);
     overflow: hidden;
     min-height: 200px;
     text-align: center;
     vertical-align: middle;
 }
 
-.content a {
+.about a {
     color: black;
     transition: ease;
     transition-duration: .7s;
 }
 
-.content a:hover {
+.about a:hover {
     color: white;
     background-color: black;
 }
 
 /** ABOUT CHILD DIVS **/
 
-.aboutchild {
+.about_child1 {
     display: inline-block;
-    max-width: 60%;
-    padding-left: 20px;
-    padding-right: 20px;
     vertical-align: middle;
     margin: auto;
 }
 
-.aboutchild img {
+.about_child2 {
+    display: inline-block;
+    max-width: 64%;
+    vertical-align: middle;
+    margin: auto;
+    padding: 2%;
+}
+
+.about_child1 img {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
     border-radius: 50%;
+}
+
+/** PROJECTS CONTENT DIVIDER **/
+
+.projects_container {
+    padding-top: 2%;
+    text-align: center;
+}
+
+/** PROJECTS **/
+
+.projects {
+    max-width: 60%;
+    margin: auto auto 1%;
+    padding: 6% 6%; /** top/bottom, left/right **/
+    font-size: 15px;
+    background-color: var(--background);
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--primarytext);
+    overflow: hidden;
+    min-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+}
+
+.projects a {
+    color: black;
+    transition: ease;
+    transition-duration: .7s;
+}
+
+.projects a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+/** PROJECTS END **/
+
+.projects_end {
+    max-width: 60%;
+    margin: auto auto 1%;
+    padding: 6% 6%; /** top/bottom, left/right **/
+    font-size: 15px;
+    background-color: var(--background);
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 30px solid;
+    border-color: var(--primarytext);
+    overflow: hidden;
+    min-height: 200px;
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+}
+
+.projects_end a {
+    color: black;
+    transition: ease;
+    transition-duration: .7s;
+}
+
+.projects_end a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+/** PROJECT CHILD DIVS **/
+
+.projects_child1 {
+    display: inline-block;
+    margin: auto;
+}
+
+.projects_child2 {
+    display: inline-block;
+    max-width: 43%;
+    margin: auto;
+}
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 1000px) {
+    .about_child2 {
+        max-width: 85%;
+    }
+
+    .projects {
+        display: block;
+    }
+    .projects_end {
+        display: block;
+    }
+
+    .projects_child2 {
+        max-width: 85%;
+    }
 }
