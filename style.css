@@ -39,9 +39,9 @@ body {
     display: block;
     transition: ease;
     transition-duration: .7s;
-    border-bottom-color: var(--primarytext);
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-style: solid;
+    border-bottom-color: var(--primarytext);
 }
 
 #navbar a {
