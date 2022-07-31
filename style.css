@@ -52,7 +52,6 @@ body {
     padding: 14px 15px;
     text-decoration: none;
     font-size: 15px;
-    stroke: black;
     fill: none;
     margin: 0;
     transition: ease;
@@ -62,8 +61,6 @@ body {
 #navbar a:hover {
     color: var(--background);
     background-color: var(--primarytext);
-    text-decoration:underline;
-    stroke: white;
 }
 
 /** TITLE (NAME + MAJOR) **/
