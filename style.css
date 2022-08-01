@@ -231,7 +231,6 @@ svg:hover{
 .projects a:hover {
     color: white;
     background-color: black;
-    text-decoration: none;
 }
 
 /** PROJECTS END **/
@@ -265,7 +264,6 @@ svg:hover{
 .projects_end a:hover {
     color: white;
     background-color: black;
-    text-decoration: none;
 }
 
 /** PROJECT CHILD DIVS **/
